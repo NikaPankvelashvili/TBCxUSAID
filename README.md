@@ -16,3 +16,6 @@ To use this project, follow these steps:
 
 1. Open the index.html file in your web browser.
 2. Explore the functionality of the project.
+
+Or simply follow the link:
+https://nikapankvelashvili.github.io/TBCxUSAID/
