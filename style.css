@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    height: 84px;
+    background-color: #1a1e1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    transition: all 0.2s ease-in; 
+}
+
+.burger{
+  position: absolute;
+  right: 4%;
+  top: 32px;
+  z-index: 10000;
+}
+
+.sidemenu{
+  display: none;
+  height: 100dvh;
+  width: 58%;
+  background-color:  #2b2b2b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 998;
+}
+
+.mobile-menu-container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 5%;
+  top: 13%;
+}
+
+.mobile-menu-container span{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu-container span a{
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.header-container{
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container nav{
+  user-select: none;
+}
+
+header li{
+  list-style: none;
+  display: inline-block;
+}
+
+header li a{
+  color: #fff;
+  margin: 0 20px;
+}
+
+.burger{
+  display: none;
+}
+
+.burger-top {
+  width: 13px;
+  height: 3px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 1.5px;
+  transition: all 0.5s ease-in;
+}
+
+.burger-middle {
+  width: 26px;
+  height: 3px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 1.5px;
+  margin: 5px 0;
+  transition: all 0.5s ease-in;
+}
+
+.burger-bottom {
+  width: 13px;
+  height: 3px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 1.5px;
+  transform: translateX(13px);
+  transition: all 0.5s ease-in;
+}
+
+.burger-active-top {
+  transform: rotate(45deg) translateX(4px) translateY(1px);
+}
+
+.burger-active-bottom {
+  transform: translateX(13px) rotate(45deg) translateX(-4px) translateY(-1px);
+}
+
+.burger-active-middle {
+  transform: rotate(-42deg) scaleX(0.95);
+}
+
+/* GENERAL INFO SECTION */
+
+.general-info-image{
+  background-image: url(../images/main-page-head-image.webp);
+  background-size: cover;
+  background-position: center;
+  height: 352px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.general-info-image-text{
+  color: #fff;
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.general-info-image-text p{
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.general-info-text{
+  background-color: #2f2f2f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 56px;
+  font-weight: bold;
+}
+
+.general-info-text span{
+  max-width: 980px;
+  width: 100%;
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 56px;
+}
+
+.general-info-text a{
+  color: #00AEF3;
+  font-size: 20px;
+  transition: color 0.3s ease-in;
+}
+
+.general-info-text a:hover{
+  color: #a39f9f;
+  opacity: 0.8;
+}
+
+/* ABOUT COURSES SECTION */
+
+.about-courses{
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+.about-courses-title{
+  color: #dbdbdb;
+  font-size: 24px;
+  max-width: 980px;
+  width: 100%;
+  margin-bottom: 67px;
+}
+
+.courses-grid{
+  max-width: 980px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 25px;
+}
+
+.course-container{
+  width: 300px;
+  height: 414px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(85, 85, 85, 1);
+  padding-bottom: 34px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.course-container-description{
+  width: 100%;
+  color: #f4f4f4;
+  font-weight: 500;
+}
+
+.course-container-description span{
+  display: block;
+}
+
+.course-container-image{
+  width: 100%;
+}
+
+.course-container-title{
+  margin: 34px 0 25px 0;
+  font-size: 18px;
+}
+
+.course-container-registration-status{
+  font-size: 14px;
+}
+
+.course-container-title-reg{
+  padding-left: 20px;
+}
+
+.course-detail-btn{
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  color: #00AEF3;
+  transition: color 0.3s ease-in;
+}
+
+.course-detail-btn:hover{
+  color: #0085b9;
+}
+
+.course-container-detail{
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* SLIDER SECTION */
+
+.slider-section{
+  background-color: #2b2b2b;
+}
+
+.slider-title-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.slider-title{
+  max-width: 980px;
+  width: 100%;
+  font-size: 24px;
+  color: #f4f4f4;
+  margin: 34px 0 31px 0;
+}
+
+
+.hidden{
+  display: none;
+}
+
+.slider-wrapper{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b2b2b;
+  padding: 0 7%;
+  margin-top: -50px;
+}
+
+.slider-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 980px;
+  width: 100%;
+  height: 310px;
+}
+
+.slider-slide{
+  user-select: none;
+}
+
+.slider-slide img {
+  animation: fadeOut 1s ease-in forwards;
+}
+
+
+.btn{
+  color: #fff;
+}
+
+.btn:hover{
+  color: #a39f9f;
+  opacity: 0.8;
+}
+
+.shown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-slide img{
+  width: 80%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.bullets-container{
+  display: flex;
+  justify-content: center;
+}
+
+.bullets-container li{
+  font-size: 20px;
+  margin-top: -100px;
+  margin-bottom: 10px;
+}
+
+.active{
+  color: white;
+}
+
+.inactive{
+  color: #a39f9f;
+}
+
+/* FAQ SECTION */
+
+.FAQ-section{
+  display: flex;
+  justify-content: center;
+  background-color: #161616;
+  padding: 50px;
+}
+
+.FAQ-container{
+  max-width: 870px;
+  width: 100%;
+}
+
+.FAQ-title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.mobile-FAQ-link{
+  display: none;
+}
+
+.FAQ-title span{
+  font-size: 24px;
+  color: #fff;
+}
+
+.FAQ-title a{
+  color: #00AEF3;
+  font-size: 20px;
+  transition: color 0.3s ease-in;
+}
+
+.FAQ-title a:hover{
+  color: #a39f9f;
+  opacity: 0.8;
+}
+
+.question{
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(85, 85, 85, 1);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.question-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qeustion-text{
+  color: #fff;
+  font-size: 20px;
+}
+
+.answer {
+  margin-top: 20px;
+  color: #dbdbdb;
+  font-size: 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.answer.show {
+  max-height: 500px;
+}
+
+.arrow.show {
+  rotate: 180deg;
+}
+
+.answer-one-div {
+  padding: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgba(26, 30, 31, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0 27px 0;
+}
+
+.contact-btn-mobile{
+  display: none;
+}
+
+.footer-img-mobile{
+  display: none;
+  height: 30px;
+  width: 105px;
+  margin-bottom: 30px;
+}
+
+.footer-rights-terms{
+  margin-top: 20px;
+}
+
+.footer-container{
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.footer-img{
+  height: 30px;
+}
+
+.footer-socials img{
+  width: 39px;
+  user-select: none;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+
+.footer-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 980px;
+  width: 100%;
+}
+
+.rights-reserved{
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.rules-terms{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.rules-terms-link{
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+}
+
+.contact-btn{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #00AEF3;
+}
+
+
+.contact-btn:hover{
+  background-color: #a39f9f;
+  transition: all 0.3s ease-in;
+  color: #1a1e1f;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Responsivness */
+
+@media (max-width: 1023px) {
+  .general-info-image-text p {
+    font-size: 28px;
+  }
+
+  .header-container{
+    padding: 0 4%;
+  }
+
+  .header-container nav{
+    display: none;
+  }
+  
+  .burger{
+    display: block;
+  }
+  
+  .slider-wrapper{
+    overflow-x: hidden;
+  }
+  
+  .courses-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .general-info-text{
+    padding: 56px 4% 0 4%;
+  }
+
+  .general-info-text span {
+    font-size: 20px;
+  }
+
+  .general-info-text a {
+    font-size: 16px;
+  }
+
+  .general-info-image{
+    padding: 0 4%;
+  }
+
+  .about-courses{
+    padding: 34px 4%;
+  }
+
+  .course-container{
+    height: 350px;
+  }
+
+  
+  .slider-title {
+    font-size: 22px;
+  }
+
+  .slider-section{
+    padding: 0 4%;
+  }
+
+  .btn{
+    display: none;
+  }
+
+  .slider-container{
+    min-height: 510px;
+  }
+
+  .slider-slide.shown{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bullets-container li{
+    margin-top: -50px;
+    
+  }
+
+  .FAQ-title a {
+    display: none;
+  }
+
+  .answer.show {
+    max-height: 1400px;
+  }
+
+  .mobile-FAQ-link{
+    display: flex;
+    justify-content: center;
+    color: #00AEF3;
+  }
+
+  .mobile-FAQ-link a{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+  footer{
+    padding: 64px 4% 27px 4%;
+  }
+
+  .contact-btn-mobile{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #00AEF3;
+  }
+
+  .footer-img{
+    display: none;
+  }
+
+  .contact-btn{
+    display: none;
+  }
+
+  .footer-rights-terms{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer-img-mobile{
+    display: block;
+  }
+
+  .sidemenu{
+    display: block;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+
+  }
+
+  .sidemenu.sidemenu-active{
+    opacity: 1;
+  }
+
+  .blur-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(50%);
+    z-index: 5;
+  }
+}
