@@ -128,7 +128,7 @@ header li a{
 /* GENERAL INFO SECTION */
 
 .general-info-image{
-  background-image: url(../images/main-page-head-image.webp);
+  background-image: url(./images/main-page-head-image.webp);
   background-size: cover;
   background-position: center;
   height: 352px;
