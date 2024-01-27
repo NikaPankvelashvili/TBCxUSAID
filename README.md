@@ -14,8 +14,11 @@ To install this project, simply clone the repository and open the index.html fil
 
 To use this project, follow these steps:
 
-1. Open the index.html file in your web browser.
-2. Explore the functionality of the project.
+employ a tool such as Live Server designed for Visual Studio Code. Follow these instructions:
+
+1. Install the Live Server extension within Visual Studio Code.
+2. Right-click on your HTML file.
+3. Choose "Open with Live Server."
 
 Or simply follow the link:
 https://nikapankvelashvili.github.io/TBCxUSAID/
